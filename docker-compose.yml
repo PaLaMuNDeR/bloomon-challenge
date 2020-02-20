@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  bouquet_design:
+    build: .
+    volumes:
+      - ./bouquet_design:/bouquet_design/
+    command: sh -c "python bouquet_design.py"
